@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>example</title>
+</head>
+<body>
+    <div class="container">
+        <div class='alert alert-success alert-dismissible fade show' role='alert'>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Nihil facilis modi delectus quam repellendus, qui dolorem ullam repudiandae, eius architecto esse vitae provident. Nam, alias itaque quam ad non dolore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam perspiciatis unde laudantium commodi optio error libero! Eum commodi quibusdam minus, placeat dignissimos vitae velit inventore itaque natus autem, nisi incidunt.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum obcaecati eveniet totam. Rerum sed ratione ipsa eveniet vitae non labore! Itaque nesciunt sit, sunt magni obcaecati consequuntur quae cumque mollitia.
+             <button class="btn-close" data-dismiss="alert" aria-label="close">
+                <!-- <span aria-hidden="true">&times;</span> -->
+            </button>
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button class="close" data-dismiss="alert" aria-label="Close" style="padding: 0; border: none; background: none;">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="alert alert-success alert-dismissible">
+            <span class="close" data-dismiss="alert" aria-label="close">&times;</span>
+            <strong>Success!</strong> Indicates a successful or positive action.
+          </div>
+          <button id="closeAlert">Fechar Alertas</button>
+    </div>
+    <script>
+        $('#closeAlert').on('click',function(){
+            $('.alert').alert('close');
+        })
+    </script>
+</body>
+</html>

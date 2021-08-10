@@ -1,0 +1,23 @@
+header{
+    height: 9vh;
+    background-color: #f37520;
+}
+footer{
+    height: 30vh;
+    background-color: #454545;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+.bg{
+    background-color: #EDEDED;
+}
+main{
+    height: calc(100vh - 200px);
+}
+.end{
+    position:absolute;
+    bottom:0;
+    text-align: center;
+    width: 100%;
+}

@@ -1,0 +1,44 @@
+#profile-row,#user{
+    background-color: #eeeeee;
+    height:4rem;
+    border:1px solid;
+    border-color:rgba(189, 189, 189,0.3);
+}
+#user{
+    border-left: none;
+}
+#busca{
+    background-color: #f8f8f8;
+    height: 3rem;
+}
+#messages{
+    background-color: #e5ddd5;
+    height:calc(100vh - 127px);
+}
+#chat{
+    background-color: #eeeeee;
+    height:4rem;
+}
+#contatos>.row>.col{
+    border-bottom: thin solid rgba(189, 189, 189,0.3);
+}
+img{
+    width: 3.5rem;
+}
+small{
+    color: #9b9b9b;
+    font-size: .8rem;
+}
+h6{
+    font-size: 1rem;
+    margin:0;
+}
+.badge{
+    background-color: #09d261;
+    text-decoration: none;
+}
+@media (max-width: 300px){
+    #user{
+        height:8rem;
+    }
+}
