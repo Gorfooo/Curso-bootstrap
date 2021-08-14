@@ -1,0 +1,33 @@
+body{
+    background-color: #1b1b1b;
+    color:#999898;
+    overflow-x: hidden;
+}
+nav{
+    background: rgb(27, 27, 27,0.8);
+    background: -webkit-linear-gradient(to bottom, rgb(27, 27, 27,1), rgb(27, 27, 27, 0.6));
+    background: linear-gradient(to bottom, rgb(27, 27, 27,1), rgb(27, 27, 27, 0.6));
+}
+#profile-pic{
+    width:2.5em;
+}
+#netflix-logo{
+    width: 4.5em;
+}
+.nav-link:hover{
+    color:rgb(255,116,0,0.8) !important;
+}
+#img-principal{
+    height: 30rem;
+    background-color: blue;
+}
+.footer{
+    height:6em;
+}
+.row>.col-md>a{
+    text-decoration: none;
+    color:#999898;
+}
+/* @media only screen and (max-width: 992px){
+    #profile-pic
+} */
