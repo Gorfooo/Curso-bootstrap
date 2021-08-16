@@ -15,29 +15,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script src="https://kit.fontawesome.com/00a4711f34.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="desafio.css">
     <title>Desafio</title>
 </head>
 
 <body>
+    <div class="backdrop"></div>
     <div id='img-principal'>
-        <img src="assets/img-principal.jpg" class='img-fluid' alt="">
+        <div class='position-absolute w-50' id='texto-principal'>
+            <span class='text-white text-nowrap' id='titulo'>Vingadores: Ultimato</span><br>
+            <div id="especificacao">
+                <small>2019</small>
+                <small>12</small>
+                <small>187min</small>
+            </div>
+            <span id='descricao'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur perferendis explicabo aliquam tempora provident, necessitatibus quasi possimus, molestias amet at pariatur est itaque nostrum debitis 
+                quaerat quia maxime unde culpa.</span><br>
+            <button class="btn text-white mt-2" id='btn-assistir'>ASSISTIR</button>
+        </div>
+        <img src="assets/Banner.jpg" alt="">
     </div>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <a class="navbar-brand" href="#">
-                <img id='netflix-logo' src="assets/netflix-logo-2-1.png" alt="">
-            </a>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav class="navbar navbar-expand-lg navbar-dark position-fixed">
+        <div class="container-fluid">
+            <div>
+                <button class="navbar-toggler" id='btncollapse' type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand mx-2" href="#">
+                    <img id='netflix-logo' src="assets/Netflix logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mb-2 mb-lg-0" >
                     <li class="nav-item">
                         <a class="nav-link" href="#">Navegar</a>
                     </li>
@@ -46,75 +60,117 @@
                     </li>
                 </ul>
             </div>
-            
-            <form class="d-flex me-5">
-                <input class="form-control bg-dark" type="search" placeholder="Search" aria-label="Search">
-                <div class="collapse navbar-collapse" id='navbarSupportedContent'>
-                    <img src="assets/ultraviolet-4k-wallpaper-2560×1600.jpg" id='profile-pic' alt="">
-                    <span class='text-white d-flex w-75 align-items-center'>Nome de Usuário</span>
-                </div>
-            </form>
+
+            <div class="d-flex align-items-center">
+                <input class="form-control bg-dark h-50 mx-3" id='search' type="search" placeholder="Search" aria-label="Search">
+                <img src="assets/Profile picture.jpg" class='mx-2 rounded-circle' id='profile-pic'
+                    alt="">
+                <span class='text-white text-nowrap' id='username'>Nome de Usuário</span>
+            </div>
         </div>
     </nav>
     
-    <div class="container-fluid">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-25" src="assets/ultraviolet-4k-wallpaper-2560×1600.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-25" src="assets/ultraviolet-4k-wallpaper-2560×1600.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-25" src="assets/ultraviolet-4k-wallpaper-2560×1600.jpg" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-        <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-25" src="assets/ultraviolet-4k-wallpaper-2560×1600.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-25" src="assets/ultraviolet-4k-wallpaper-2560×1600.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-25" src="assets/ultraviolet-4k-wallpaper-2560×1600.jpg" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-        <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-25" src="assets/ultraviolet-4k-wallpaper-2560×1600.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-25" src="assets/ultraviolet-4k-wallpaper-2560×1600.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-25" src="assets/ultraviolet-4k-wallpaper-2560×1600.jpg" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
+    <div id="sidebar" class=''>
+        <div class="d-flex align-items-center">
+            <img src="assets/Profile picture.jpg" class='rounded-circle mt-3 mx-2' id='profile-pic-menu' alt="">
+            <span class='mx-3 flex-wrap text-truncate text-wrap mt-3'>Nome de Usuário</span>
         </div>
+        <hr>
+        <ul class="list-group">
+            <a href='#' class="p-2">Início</a>
+            <a href='#' class="p-2">Minha asta</a>
+            <a href='#' class="p-2">Séries de ação e aventura</a>
+            <a href='#' class="p-2">Séries teen</a>
+            <a href='#' class="p-2">Animações</a>
+            <a href='#' class="p-2">Romance</a>
+            <a href='#' class="p-2">Sair</a>
+          </ul>
+    </div>
+    
+    <div class="container-fluid">
 
-        <div class="row footer text-nowrap d-flex align-items-center">
+        <section class="carousel slide" id="postsCarousel">
+            <a class="btn btn-secondary-outline prevFirst text-white" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+            <a class="btn btn-secondary-outline nextFirst text-white" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+            <div class="pt-0 mt-2">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-nowrap">
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+
+                        <img src="assets/" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+
+                        <img src="assets/" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="carousel slide" data-interval="0" id="postsCarousel">
+            <a class="btn btn-secondary-outline prevSecond text-white" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+            <a class="btn btn-secondary-outline nextSecond text-white" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+            <div class="pt-0 mt-2">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-nowrap">
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+
+                        <img src="assets/" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+
+                        <img src="assets/" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="carousel slide" data-interval="0" id="postsCarousel">
+            <a class="btn btn-secondary-outline prevThird text-white" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+            <a class="btn btn-secondary-outline nextThird text-white" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+            <div class="pt-0 mt-2">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-nowrap">
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+
+                        <img src="assets/" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+        
+                        <img src="assets/" alt="">
+
+                        <img src="assets/" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="row footer text-nowrap p-3 d-flex align-items-center">
             <div class="col-md col-lg-2">
                 <a href="#">Termos de uso</a>
             </div>
@@ -129,6 +185,57 @@
             </div>
         </div>
     </div>
+    <script>
+        $('#sidebar').contents().hide();
+        $('#profile-pic-menu').hide();
+        $('.carousel').carousel('pause');
+
+        $(function(){
+
+            $('.nextFirst').click(function(){ $('.carousel').carousel('next').carousel('pause');return false; });
+            $('.prevFirst').click(function(){ $('.carousel').carousel('prev').carousel('pause');return false; });
+            $('.nextSecond').click(function(){ $('.carousel').carousel('next').carousel('pause');return false; });
+            $('.prevSecond').click(function(){ $('.carousel').carousel('prev').carousel('pause');return false; });
+            $('.nextThird').click(function(){ $('.carousel').carousel('next').carousel('pause');return false; });
+            $('.prevThird').click(function(){ $('.carousel').carousel('prev').carousel('pause');return false; });
+
+            $('#btncollapse').on('click',function(){
+                $('.backdrop').toggle();
+                if($('#sidebar').width() != 0){
+                    $('.navbar').css('background-color','rgba(27, 27, 27, 0)');
+                    $('#sidebar').contents().hide();
+                    $('#profile-pic-menu').hide();
+                    $('#sidebar').animate({
+                        width:0,
+                    },100,function(){
+                        
+                    });
+                }else{
+                    $('#sidebar').contents().show();
+                    $('#profile-pic-menu').show();
+                    $('.navbar').css('background-color','rgba(27, 27, 27, 1)');
+                    $('#sidebar').animate({
+                        width:230,
+                    },100,function(){
+
+                    });
+                }
+            })
+
+            $('.backdrop').on('click',function(){
+                $('.backdrop').toggle();
+                $('.navbar').css('background-color','rgba(27, 27, 27, 0)');
+                    $('#sidebar').contents().hide();
+                    $('#profile-pic-menu').hide();
+                    $('#sidebar').animate({
+                        width:0,
+                    },100,function(){
+                        
+                    });
+            })
+
+        })
+    </script>
 </body>
 
 </html>
