@@ -1,57 +1,54 @@
-body{
-    background-color: #1b1b1b;
-    color:#999898;
-    overflow-x: hidden;
+#slider .owl-nav div.owl-prev, 
+#slider .owl-nav div.owl-next {
+    color: #fff;
+    font-size: 18px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    line-height: 39px;
+    opacity: 0;
+    border:1px solid #fff;
+    width: 40px;
+    height: 40px;
 }
-nav{
-    background: rgb(27, 27, 27,0.8);
-    background: -webkit-linear-gradient(to bottom, rgb(27, 27, 27,1), rgb(27, 27, 27, 0));
-    background: linear-gradient(to bottom, rgb(27, 27, 27,1), rgb(27, 27, 27, 0));
-    position:absolute !important;
-    width: 100%;
-    top:0;
-    height: 3rem;
+img{
+    width: 5rem !important;
+    height: 5rem;
 }
-#profile-pic{
-    width:3em;
+#slider .owl-nav div.owl-prev{
+    left: 10%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -ms-transition: 0.4s;
 }
-#netflix-logo{
-    width: 4.5em;
+#slider .owl-nav div.owl-next {
+    right: 10%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -ms-transition: 0.4s;
 }
-.nav-link:hover{
-    color:rgb(255,116,0,0.8) !important;
+#slider:hover .owl-nav div.owl-next{
+    right: 2%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -ms-transition: 0.4s;
+    opacity: 1;
 }
-#img-principal{
-    height: 33rem;
-    float:right;
+#slider:hover .owl-nav div.owl-prev{
+    left: 2%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -ms-transition: 0.4s;
+    opacity: 1;
 }
-#img-principal>img{
-    width:65rem;
-    height: 33rem;
-}
-.carousel-item>img{
-    width: 18rem;
-    height: 12rem;
-}
-.footer{
-    height:6em;
-    position:absolute;
-    width: 100%;
-}
-.row>.col-md>a{
-    text-decoration: none;
-    color:#999898;
-}
-#search2{
-    display: none;
-}
-@media only screen and (max-width: 992px){
-    #img-principal>img{
-        width: 50em;
-    }
-}
-@media only screen and (max-width: 739px){
-    #img-principal{
-        width: 25em;
-    }
+#slider:hover .owl-nav div.owl-next:hover,
+#slider:hover .owl-nav div.owl-prev:hover{
+    color:#fff;
+    background: #0C94B8;
+    border: 1px solid #0C94B8;
 }

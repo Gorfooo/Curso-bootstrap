@@ -134,8 +134,48 @@ nav{
     z-index: 99;
 }
 .carousel-item>img{
-    width: 18rem;
-    height: 12rem;
+    width: 17rem;
+    border-radius: .4rem;
+    height: 10rem;
+}
+.imgHover:hover{
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.4));
+}
+img[src="assets/Nosso planeta.jpg"]:hover{
+
+}
+img[src="assets/The rain.jpg"]:hover{
+
+}
+img[src="assets/Thor.jpg"]:hover{
+
+}
+img[src="assets/Vingadores.jpg"]:hover{
+
+}
+img[src="assets/Better call saul.jpg"]:hover{
+
+}
+img[src="assets/Capitao america.jpg"]:hover{
+
+}
+img[src="assets/Eu sou a lenda.jpg"]:hover{
+
+}
+img[src="assets/Greys anatomy.jpg"]:hover{
+
+}
+img[src="assets/Guardioes da galaxia.jpg"]:hover{
+
+}
+img[src="assets/Homem de ferro 2.jpg"]:hover{
+
+}
+img[src="assets/Homem de ferro.jpg"]:hover{
+
+}
+img[src="assets/Menino que descobriu o vento.jpg"]:hover{
+
 }
 .carousel-inner>.carousel-item.next.left,
 .carousel-inner>.carousel-item.prev.right

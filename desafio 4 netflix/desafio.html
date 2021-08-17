@@ -36,7 +36,7 @@
         </div>
         <img src="assets/Banner.jpg" alt="">
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark position-fixed">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <div>
                 <button class="navbar-toggler" id='btncollapse' type="button" data-bs-toggle="collapse"
@@ -95,22 +95,22 @@
             <div class="pt-0 mt-2">
                 <div class="carousel-inner">
                     <div class="carousel-item active text-nowrap">
-                        <img src="assets/" alt="">
+                        <img src="assets/Better call saul.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/Capitao america.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/Eu sou a lenda.jpg" class='imgHover' alt="">
 
-                        <img src="assets/" alt="">
+                        <img src="assets/Greys anatomy.jpg" class='imgHover' alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/" alt="">
+                        <img src="assets/Guardioes da galaxia.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/Homem de ferro 2.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/Homem de ferro.jpg" class='imgHover' alt="">
 
-                        <img src="assets/" alt="">
+                        <img src="assets/Menino que descobriu o vento.jpg" class='imgHover' alt="">
                     </div>
                 </div>
             </div>
@@ -122,22 +122,22 @@
             <div class="pt-0 mt-2">
                 <div class="carousel-inner">
                     <div class="carousel-item active text-nowrap">
-                        <img src="assets/" alt="">
+                        <img src="assets/Nosso planeta.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/The rain.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/Thor.jpg" class='imgHover' alt="">
 
-                        <img src="assets/" alt="">
+                        <img src="assets/Vingadores.jpg" class='imgHover' alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/" alt="">
+                        <img src="assets/Eu sou a lenda.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/Greys anatomy.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/Vingadores.jpg" class='imgHover' alt="">
 
-                        <img src="assets/" alt="">
+                        <img src="assets/Thor.jpg" class='imgHover' alt="">
                     </div>
                 </div>
             </div>
@@ -149,22 +149,22 @@
             <div class="pt-0 mt-2">
                 <div class="carousel-inner">
                     <div class="carousel-item active text-nowrap">
-                        <img src="assets/" alt="">
+                        <img src="assets/Nosso planeta.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/Better call saul.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/The rain.jpg" class='imgHover' alt="">
 
-                        <img src="assets/" alt="">
+                        <img src="assets/Homem de ferro 2.jpg" class='imgHover' alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/" alt="">
+                        <img src="assets/Homem de ferro.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/Greys anatomy.jpg" class='imgHover' alt="">
         
-                        <img src="assets/" alt="">
+                        <img src="assets/Capitao america.jpg" class='imgHover' alt="">
 
-                        <img src="assets/" alt="">
+                        <img src="assets/Eu sou a lenda.jpg" class='imgHover' alt="">
                     </div>
                 </div>
             </div>
@@ -200,6 +200,7 @@
             $('.prevThird').click(function(){ $('.carousel').carousel('prev').carousel('pause');return false; });
 
             $('#btncollapse').on('click',function(){
+                $('.navbar').toggleClass('position-fixed');
                 $('.backdrop').toggle();
                 if($('#sidebar').width() != 0){
                     $('.navbar').css('background-color','rgba(27, 27, 27, 0)');
