@@ -133,44 +133,8 @@ nav{
     max-width: 17rem;
     z-index: 102;
 }
-.imgHover:hover{
+.imgHover{
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.4));
-}
-img[src="assets/Nosso planeta.jpg"]:hover{
-
-}
-img[src="assets/The rain.jpg"]:hover{
-
-}
-img[src="assets/Thor.jpg"]:hover{
-
-}
-img[src="assets/Vingadores.jpg"]:hover{
-
-}
-img[src="assets/Better call saul.jpg"]:hover{
-
-}
-img[src="assets/Capitao america.jpg"]:hover{
-
-}
-img[src="assets/Eu sou a lenda.jpg"]:hover{
-
-}
-img[src="assets/Greys anatomy.jpg"]:hover{
-
-}
-img[src="assets/Guardioes da galaxia.jpg"]:hover{
-
-}
-img[src="assets/Homem de ferro 2.jpg"]:hover{
-
-}
-img[src="assets/Homem de ferro.jpg"]:hover{
-
-}
-img[src="assets/Menino que descobriu o vento.jpg"]:hover{
-
 }
 .footer{
     height:6em;
@@ -180,16 +144,14 @@ img[src="assets/Menino que descobriu o vento.jpg"]:hover{
 .item>img{
     border-radius: .4rem;
 }
-.main-content2, .main-content, .main-content3{
+.main-content2, .main-content, .main-content3, .item{
     position: relative;
 }
 .custom-nav {
     position: absolute;
     top: 40% !important;
-    bottom: 40% !important;
     left: 0;
     right: 0;
-    padding:0;
 }
 .main-content2 .custom-nav .owl-prev, .main-content2 .custom-nav .owl-next,
 .main-content .custom-nav .owl-prev, .main-content .custom-nav .owl-next,
@@ -210,7 +172,89 @@ img[src="assets/Menino que descobriu o vento.jpg"]:hover{
 .owl-next {
     right: 0;
 }
-i:hover{
+i.fa:hover{
     transition: all 0.25s;
-    transform: scale(1.5)
+    transform: scale(1.5);
+}
+.inside-top{
+    position:absolute;
+    bottom: 50% !important;
+    margin-left: .5rem;
+    display: none;
+}
+.fa-play-circle{
+    transform: scale(2.5);
+    margin-left: .8rem;
+    cursor: pointer;
+}
+.relevance{
+    color: #3FAD56;
+}
+.inside-mid{
+    position:absolute;
+    bottom:15%;
+    margin-left: .5rem;
+    display: none;
+}
+.inside-bottom{
+    position:absolute;
+    bottom:0%;
+    margin-left: .5rem;
+    display: none;
+}
+@media only screen and (max-width: 550px){
+    .fa-play-circle{
+        transform: scale(2.25) !important;
+    }
+    .inside-top{
+        bottom: 53.5% !important;
+    }
+}
+@media only screen and (max-width: 500px){
+    #partes{
+        display: none;
+    }
+}
+@media only screen and (max-width: 475px){
+    #genero{
+        display: none;
+    }
+    .inside-mid{
+        bottom:0%;
+    }
+}
+@media only screen and (max-width: 399px){
+    #partes{
+        display: unset;
+    }
+    #genero{
+        display: unset;
+    }
+    .inside-mid{
+        bottom:15%;
+    }
+    .inside-top{
+        bottom: 45% !important;
+    }
+    .fa-play-circle{
+        transform: scale(2.5) !important;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .inside-top{
+        bottom: 55% !important;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .inside-top{
+        bottom: 47% !important;
+    }
+}
+.age{
+    background-color: #1b1b1b;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    border-radius: .2rem;
 }

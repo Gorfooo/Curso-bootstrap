@@ -1,16 +1,18 @@
-.main-content2, .main-content {
+.main-content2, .main-content, .main-content3, .item{
     position: relative;
 }
 .custom-nav {
     position: absolute;
-    top: 20%;
+    top: 40% !important;
+    bottom: 40% !important;
     left: 0;
     right: 0;
+    padding:0;
 }
-.main-content2 .owl-theme .custom-nav .owl-prev, .main-content2 .owl-theme .custom-nav .owl-next,
-.main-content .owl-theme .custom-nav .owl-prev, .main-content .owl-theme .custom-nav .owl-next {
+.main-content2 .custom-nav .owl-prev, .main-content2 .custom-nav .owl-next,
+.main-content .custom-nav .owl-prev, .main-content .custom-nav .owl-next,
+.main-content3 .custom-nav .owl-prev, .main-content3 .custom-nav .owl-next {
     position: absolute;
-    height: 100px;
     color: inherit;
     background: none;
     border: none;
@@ -25,4 +27,11 @@
 }
 .owl-next {
     right: 0;
+}
+.inside{
+    position:absolute;
+    top: 40% !important;
+}
+img[src="https://images.unsplash.com/photo-1510797215324-95aa89f43c33?fit=crop&fm=jpg&h=800&q=80&w=1200"]:hover{
+    
 }
