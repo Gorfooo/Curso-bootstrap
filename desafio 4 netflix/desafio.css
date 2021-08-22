@@ -176,12 +176,6 @@ i.fa:hover{
     transition: all 0.25s;
     transform: scale(1.5);
 }
-.inside-top{
-    position:absolute;
-    bottom: 50% !important;
-    margin-left: .5rem;
-    display: none;
-}
 .fa-play-circle{
     transform: scale(2.5);
     margin-left: .8rem;
@@ -190,24 +184,21 @@ i.fa:hover{
 .relevance{
     color: #3FAD56;
 }
+.inside-bottom,.inside-mid{
+    position: absolute;
+    opacity: 0;
+}
 .inside-mid{
-    position:absolute;
     bottom:15%;
     margin-left: .5rem;
-    display: none;
 }
 .inside-bottom{
-    position:absolute;
     bottom:0%;
     margin-left: .5rem;
-    display: none;
 }
 @media only screen and (max-width: 550px){
     .fa-play-circle{
         transform: scale(2.25) !important;
-    }
-    .inside-top{
-        bottom: 53.5% !important;
     }
 }
 @media only screen and (max-width: 500px){
@@ -233,21 +224,8 @@ i.fa:hover{
     .inside-mid{
         bottom:15%;
     }
-    .inside-top{
-        bottom: 45% !important;
-    }
     .fa-play-circle{
         transform: scale(2.5) !important;
-    }
-}
-@media only screen and (min-width: 1000px){
-    .inside-top{
-        bottom: 55% !important;
-    }
-}
-@media only screen and (min-width: 1200px){
-    .inside-top{
-        bottom: 47% !important;
     }
 }
 .age{
@@ -257,4 +235,12 @@ i.fa:hover{
     padding-top: .35rem;
     padding-bottom: .35rem;
     border-radius: .2rem;
+}
+.item:hover .inside-bottom{
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 1;
+}
+.item:hover .inside-mid{
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 1;
 }
